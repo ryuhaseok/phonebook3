@@ -42,6 +42,14 @@ for(int i=0; i<personList.size(); i++) {
 		<th>회사(company)</th>
 		<td><%=personList.get(i).getCompany() %></td>
 	</tr>
+	<tr>
+		<td><%=personList.get(i).getPersonId() %>
+			<a href="/phonebook3/pbc?action=delete&no=<%=personList.get(i).getPersonId() %>">[삭제]</a>
+		</td>
+		<td>
+			<a href="/phonebook3/pbc?action=updateForm&no=<%=personList.get(i).getPersonId() %>&name=<%=personList.get(i).getName() %>&hp=<%=personList.get(i).getHp() %>&company=<%=personList.get(i).getCompany() %>">[수정]</a>
+		</td>
+	</tr>
 </table>
 <br>
 

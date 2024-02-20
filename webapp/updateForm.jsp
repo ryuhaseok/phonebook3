@@ -10,15 +10,15 @@
 
 <h1>전화번호</h1>
 
-<h2>등록폼</h2>
+<h2>수정폼</h2>
 
 <p>
-	전화번호를 등록하려면<br>
-	아래 항목을 기입하고 "등록" 버튼을 클릭하세요
+	전화번호를 수정하려면<br>
+	아래 항목을 기입하고 "수정" 버튼을 클릭하세요
 </p>
 
 <form action="/phonebook3/pbc" method="get">
-	<input type="hidden" name="action" value="insert">
+	<input type="hidden" name="action" value="update">
 
 	<div>
 		<label>이름(name)</label>
@@ -35,7 +35,8 @@
 		<input type="text" name="company" value="">
 	</div>
 	
-	<button type="submit">등록</button>
+	<input type="hidden" name="no" value="<%=request.getAttribute("no")%>">
+	<button type="submit">수정</button>
 </form>
 
 <br><br>
