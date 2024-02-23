@@ -103,8 +103,15 @@ public class PhonebookController extends HttpServlet {
 			System.out.println("update:수정폼");
 			int no = Integer.parseInt(request.getParameter("no"));
 			System.out.println(no);
-			
 			request.setAttribute("no", no);
+			
+			PersonVo personVo = new PersonVo(no);
+			PhoneDao phoneDao = new PhoneDao();
+			PersonVo personVoAll = phoneDao.personSelectAll(personVo);
+			System.out.println(personVoAll);
+			
+			
+			request.setAttribute("personVoAll",personVoAll);
 			
 			/*
 			//jsp에게 html 그리기 응답하라

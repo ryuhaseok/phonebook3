@@ -41,7 +41,7 @@
 			<a href="/phonebook3/pbc?action=delete&no=${personVo.personId }">[삭제]</a>
 		</td>
 		<td>
-			<a href="/phonebook3/pbc?action=updateForm&no=${personVo.personId }&name=${personVo.name }&hp=${personVo.hp }&company=${personVo.company}">[수정]</a>
+			<a href="/phonebook3/pbc?action=updateForm&no=${personVo.personId }">[수정]</a>
 		</td>
 	</tr>
 </table>

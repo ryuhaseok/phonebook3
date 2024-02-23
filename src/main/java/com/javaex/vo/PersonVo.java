@@ -12,6 +12,15 @@ public class PersonVo {
 	public PersonVo() {
 	}
 	
+	public PersonVo(int personId) {
+		this.personId = personId;
+	}
+	
+	public PersonVo(int personId, String name) {
+		this.personId = personId;
+		this.name = name;
+	}
+	
 	public PersonVo(String name, String hp, String company) {
 		this.name = name;
 		this.hp = hp;
