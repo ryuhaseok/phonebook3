@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +36,7 @@
 		<input type="text" name="company" value="">
 	</div>
 	
-	<input type="hidden" name="no" value="<%=request.getAttribute("no")%>">
+	<input type="hidden" name="no" value="${requestScope.personVo.personId }">
 	<button type="submit">수정</button>
 </form>
 
